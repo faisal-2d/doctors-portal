@@ -1,10 +1,11 @@
 import React from 'react';
+import Banner from './Banner';
 
 const Appointment = () => {
     return (
-        <div>
-            <h3>Welcome to Appointment</h3>
-        </div>
+        <section className='container mx-auto'>
+            <Banner></Banner>
+        </section>
     );
 };
 
