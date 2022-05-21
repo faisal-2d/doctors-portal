@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Home from './Components/Home';
+import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar';
-import Appointment from './Components/Appointment';
-import Review from './Components/Review';
+import Appointment from './Components/Appointment/Appointment';
+import Review from './Components/Home/Review';
 import Contact from './Components/Contact';
 import About from './Components/About';
 import Login from './Components/Login';
@@ -13,7 +12,7 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div>
+    <div className='max-w-7xl mx-auto'>
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>

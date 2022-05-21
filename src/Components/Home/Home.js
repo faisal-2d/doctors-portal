@@ -1,14 +1,14 @@
 import React from 'react';
+import Testimonials from '../Testimonials/Testimonials';
 import Banner from './Banner';
 import DoctorProfile from './DoctorProfile';
 import Form from './Form';
 import Hero from './Hero';
-import Info from './Info/Info';
-import Services from './Services/Services';
-import Testimonials from './Testimonials/Testimonials';
+import Info from '../Info/Info';
+import Services from '../Services/Services';
 
 
-const Appointment = () => {
+const Home = () => {
     return (
         <section className='container mx-auto'>
             <Banner></Banner>
@@ -22,4 +22,4 @@ const Appointment = () => {
     );
 };
 
-export default Appointment;
+export default Home;
