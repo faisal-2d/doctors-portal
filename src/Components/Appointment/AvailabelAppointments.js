@@ -28,7 +28,7 @@ const AvailabelAppointments = ({date}) => {
                     ></AppointmentCard>)
                 }
             </div>
-            {booking && <AppointmentModal booking={booking}></AppointmentModal>}
+            {booking && <AppointmentModal date={date} booking={booking}></AppointmentModal>}
         </div>
     );
 };
