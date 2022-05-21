@@ -8,7 +8,7 @@ const AvailabelAppointments = ({date}) => {
     const [appointments, setAppointments] = useState([]);
     const [booking, setBooking] = useState(null);
     useEffect(()=> {
-        axios.get('appointments.json')
+        axios.get('http://localhost:5000/services')
         .then(data => setAppointments(data.data))
     },[])
     console.log(booking);
@@ -28,7 +28,7 @@ const AvailabelAppointments = ({date}) => {
                     ></AppointmentCard>)
                 }
             </div>
-            {booking && <AppointmentModal date={date} booking={booking}></AppointmentModal>}
+            {booking && <AppointmentModal date={date} booking={booking} setBooking={setBooking}></AppointmentModal>}
         </div>
     );
 };
